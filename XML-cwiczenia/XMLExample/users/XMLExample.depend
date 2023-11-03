@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1303067212 source:/home/kas/proje/lekcje/C++_obiektowy/XML/XMLExample/Markup.cpp
+	<stdio.h>
+	"Markup.h"
+	<errno.h>
+	<iconv.h>
+	<windows.h>
+	<mbstring.h>
+
+1303067212 /home/kas/proje/lekcje/C++_obiektowy/XML/XMLExample/Markup.h
+	<stdlib.h>
+	<string.h>
+	<string>
+	<afx.h>
+
+1696884529 source:/home/kas/proje/lekcje/C++_obiektowy/XML/XMLExample/main.cpp
+	<iostream>
+	"Markup.h"
+
+1303067212 source:/home/kas/proje/lekcje/C++_obiektowy/XML/XMLExample/users/Markup.cpp
+	<stdio.h>
+	"Markup.h"
+	<errno.h>
+	<iconv.h>
+	<windows.h>
+	<mbstring.h>
+
+1303067212 /home/kas/proje/lekcje/C++_obiektowy/XML/XMLExample/users/Markup.h
+	<stdlib.h>
+	<string.h>
+	<string>
+	<afx.h>
+
+1697664925 source:/home/kas/proje/lekcje/C++_obiektowy/XML/XMLExample/users/main.cpp
+	<iostream>
+	<vector>
+	"Markup.h"
+

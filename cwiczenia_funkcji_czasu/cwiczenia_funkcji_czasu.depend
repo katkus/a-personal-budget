@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1698007572 source:/home/kas/proje/lekcje/C++_obiektowy/cwiczenia_funkcji_czasu/main.cpp
+	<iostream>
+	<time.h>
+	<ctime>
+	<cstdio>
+	<clocale>
+	<cstdio>
+	<clocale>
+
