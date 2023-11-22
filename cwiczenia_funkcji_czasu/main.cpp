@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <clocale>
 #include <string>
+#include <algorithm>
 //co zrobić z bibliotekami?? Potrzebne??
 using namespace std;
 
@@ -74,32 +75,7 @@ void displayAllDate (string date[])
         cout << date[i] << endl;
     }
 }
-void bubbleSort(int index, string date[], int size) {
-    string temp;
-    bool hasBeenChange = false;
-    for(int i = 0; i < size; i++) {
-        for (int j = 0; j < size - i - 1; j++) {
-            if ((date[j][index]) > (date[j+1][index])) {
-                temp = date[j];
-                date[j] = date[j+1];
-                date[j+1] = temp;
-                hasBeenChange = true;
-            }
-        }
-        if (hasBeenChange == false) {
 
-            break;
-        }
-    }
-}
-void radixSort(string date[], int size) {
-    for (int i = 9; i >= 0; i--) {
-        if (i != 4 && i != 7) {
-            bubbleSort(i, date, size);
-        }
-    }
-    cout << endl << "Daty posortowane: "<< endl;
-}
 int main() {
     string date [] = {"1983-01-22", "1970-06-01", "1970-03-15", "2020-06-15", "" };
     int size = 5;
@@ -108,7 +84,8 @@ int main() {
     checkNumberOfDaysPerMonth(date[4]);
 
     displayAllDate(date);
-    radixSort(date, size);
+    sort(date, date+5);
+    cout<< "posortowane: "<<endl;
     displayAllDate(date);
 
     return 0;
