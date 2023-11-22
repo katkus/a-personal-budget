@@ -85,6 +85,7 @@ int main() {
 
     displayAllDate(date);
     sort(date, date+5);
+    //sort(vec.begin(), vec.end()); => przy pracy na wektorach;
     cout<< "posortowane: "<<endl;
     displayAllDate(date);
 
