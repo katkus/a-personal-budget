@@ -13,7 +13,7 @@ class AuxiliaryMethods
 public:
    // static string konwerjsaIntNaString(int liczba);
     //static int konwersjaStringNaInt(string liczba);
-  //  static string wczytajLinie();
+    static string loadLine();
     //static string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
     static char loadCharacter();
    // static string pobierzLiczbe(string tekst, int pozycjaZnaku);

@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-//#include "UzytkownikMenedzer.h"
+#include "UserManager.h"
 //#include "AdresatMenedzer.h"
 
 using namespace std;

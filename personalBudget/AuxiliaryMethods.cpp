@@ -14,15 +14,15 @@ int MetodyPomocnicze::konwersjaStringNaInt(string liczba)
     iss >> liczbaInt;
 
     return liczbaInt;
-}
-string MetodyPomocnicze::wczytajLinie()
+}*/
+string AuxiliaryMethods::loadLine()Linie()
 {
-    string wejscie = "";
+    string entry = "";
     cin.sync();
-    getline(cin, wejscie);
-    return wejscie;
+    getline(cin, entry);
+    return entry;
 }
-
+/*
 string MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst)
 {
     if (!tekst.empty())

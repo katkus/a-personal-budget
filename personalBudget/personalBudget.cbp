@@ -32,6 +32,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="AuxiliaryMethods.cpp" />
+		<Unit filename="AuxiliaryMethods.h" />
+		<Unit filename="FileWithUsers.cpp" />
+		<Unit filename="FileWithUsers.h" />
+		<Unit filename="PersonalBudget.cpp" />
+		<Unit filename="PersonalBudget.h" />
+		<Unit filename="User.cpp" />
+		<Unit filename="User.h" />
+		<Unit filename="UserManager.cpp" />
+		<Unit filename="UserManager.h" />
+		<Unit filename="XMLFile.cpp" />
+		<Unit filename="XMLFile.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

@@ -6,8 +6,8 @@ void PersonalBudget::registerUser()
 }
 void PersonalBudget::loginUser()
 {
-  /*  userManager.loginUser();
-    if (userManager.isUserLoggedIn())
+    userManager.loginUser();
+    /*if (userManager.isUserLoggedIn())
     {
         budgetManager= new BudgetManager (FILE_NAME_WITH_EARNING, userManagerMenedzer.getLoggedInUserId()); //co z podziałem na incomes i expenses??
     }*/
