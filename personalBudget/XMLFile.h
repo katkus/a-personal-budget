@@ -14,7 +14,7 @@ public:
     string getFileName();
     static bool isFileEmpty(fstream &XMLFile);
 
-    XMLFile(string nameFile): NAME_FILE (nameFile) {};
+    XMLFile(string nameFile): FILE_NAME (nameFile) {};
 };
 #endif // XMLFILE_H
 

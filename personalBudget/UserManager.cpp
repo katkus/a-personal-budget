@@ -17,15 +17,6 @@ User UserManager::getNewUserData()
 
     user.setId(getNewUserId());
 
-    string login;
-    do
-    {
-        cout << "Podaj login: ";
-        login = AuxiliaryMethods::loadLine();
-        user.setLogin(login);
-    }
-    while (loginExists(user.getLogin()) == true);
-
     string firstName;
     cout << "Podaj imie: ";
     firstName = AuxiliaryMethods::loadLine();
@@ -37,6 +28,15 @@ User UserManager::getNewUserData()
     lastName = AuxiliaryMethods::loadLine();
 
     user.setLastName(lastName);
+
+    string login;
+    do
+    {
+        cout << "Podaj login: ";
+        login = AuxiliaryMethods::loadLine();
+        user.setLogin(login);
+    }
+    while (loginExists(user.getLogin()) == true);
 
     string password;
     cout << "Podaj haslo: ";
@@ -106,8 +106,10 @@ void UserManager::loginUser()
 void UserManager::logoutUser()
 {
     loggedInUserId = 0;
+    //cout << "Koniec"<< endl; =>test
+    //system("read"); =>test
 }
-void UserManager::changePassword()
+/*void UserManager::changePassword()
 {
     string newPassword = "";
     cout << "Podaj nowe haslo: ";
@@ -123,15 +125,15 @@ void UserManager::changePassword()
         }
     }
     fileWithUsers.saveAllUsersToFile(users);
-}
-bool UserManager::isUserLoggedIn()
+}*/
+/*bool UserManager::isUserLoggedIn()
 {
     if (loggedInUserId > 0)
         return true;
     else
         return false;
-}
-int UserManager::getNewUserId()
+}*/
+int UserManager::getLoggedInUserId()
 {
     return loggedInUserId;
 }

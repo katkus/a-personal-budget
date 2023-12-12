@@ -11,7 +11,7 @@
 #include "User.h"
 //#include "BudgetManager.h"
 //#include "Earning.h"
-//#include "FileWithUsers.h"
+#include "FileWithUsers.h"
 
 using namespace std;
 
@@ -34,8 +34,8 @@ public:
     void registerUser();
     void loginUser();
     void logoutUser();
-    void changePassword();
-    bool isUserLoggedIn();
+    //void changePassword();
+    //bool isUserLoggedIn();
     int getLoggedInUserId();
 } ;
 #endif // USERMANAGER_H

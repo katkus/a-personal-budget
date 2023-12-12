@@ -30,14 +30,14 @@ public:
     void registerUser();
     void loginUser();
     void logoutUser();
-    void changePassword();
+    //void changePassword();
     //void addIncome();
     //void addExpense();
    // void displayCurrentMonthsBalanceSheet();
     //void displayPreviousMonthsBalanceSheet();
    // void displayBalanceSheetFromSelectedTimePeriod();
-    bool isUserLoggedIn();
-    char selectOptionFromMainMenu();
-    char selectOptionFromBudgetMenu();
+    //bool isUserLoggedIn();
+    //char selectOptionFromMainMenu();
+    //char selectOptionFromBudgetMenu();
 };
 #endif // PERSONALBUDGET_

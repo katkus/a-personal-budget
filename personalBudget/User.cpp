@@ -1,28 +1,44 @@
-#include "Uzytkownik.h"
+#include "User.h"
 
 
-void Uzytkownik::ustawId (int noweId)
+void User::setId (int newId)
 {
-    if (noweId >= 0)
-        id = noweId;
+    if (newId >= 0)
+        id = newId;
 }
-void Uzytkownik::ustawLogin (string nowyLogin)
+void User::setFirstName(string newFirstName)
 {
-    login = nowyLogin;
+    firstName = newFirstName;
 }
-void Uzytkownik::ustawHaslo (string noweHaslo)
+void User::setLastName(string newLastName)
 {
-    haslo = noweHaslo;
+    lastName = newLastName;
 }
-int Uzytkownik::pobierzId ()
+void User::setLogin (string newLogin)
+{
+    login = newLogin;
+}
+void User::setPassword(string newPassword)
+{
+    password = newPassword;
+}
+int User::getId ()
 {
     return id;
 }
-string Uzytkownik::pobierzLogin ()
+string User::getFirstName()
+{
+    return firstName;
+}
+string User::getLastName()
+{
+    return lastName;
+}
+string User::getLogin()
 {
     return login;
 }
-string Uzytkownik::pobierzHaslo ()
+string User::getPassword ()
 {
-    return haslo;
+    return password;
 }

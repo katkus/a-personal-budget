@@ -15,7 +15,7 @@ int MetodyPomocnicze::konwersjaStringNaInt(string liczba)
 
     return liczbaInt;
 }*/
-string AuxiliaryMethods::loadLine()Linie()
+string AuxiliaryMethods::loadLine()
 {
     string entry = "";
     cin.sync();
@@ -32,7 +32,7 @@ string MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst
     }
     return tekst;
 }*/
-char AuxiliaryMethods::loadCharacter()
+/*char AuxiliaryMethods::loadCharacter()
 {
     string entrance = "";
     char character  = {0};
@@ -49,7 +49,7 @@ char AuxiliaryMethods::loadCharacter()
         cout << "To nie jest pojedynczy znak. Wpisz ponownie." << endl;
     }
     return character;
-}
+}*/
 /*
 string MetodyPomocnicze::pobierzLiczbe(string tekst, int pozycjaZnaku)
 {

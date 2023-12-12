@@ -20,7 +20,6 @@ public:
     void ustawHaslo (string noweHaslo) {
         haslo = noweHaslo;
     }
-
     int pobierzId () {
         return id;
     }
@@ -38,7 +37,6 @@ void wypiszWszystkichUzytkownikow(vector <Uzytkownik> &uzytkownicy) {
         cout << uzytkownicy[i].pobierzId() << endl;
         cout << uzytkownicy[i].pobierzLogin() << endl;
         cout << uzytkownicy[i].pobierzHaslo() << endl;
-
     }
     system("read");
 }

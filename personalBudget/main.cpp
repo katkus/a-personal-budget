@@ -3,10 +3,10 @@
 #include "PersonalBudget.h"
 
 using namespace std;
-
-int main()
+/*
+int _Main()
 {
-    PersonalBudget personalBudget ("users.xml", "incomes.txml", "expenses.xml");
+   PersonalBudget personalBudget ("users.xml", "incomes.txml", "expenses.xml");
 
   char choice;
 
@@ -64,28 +64,34 @@ int main()
         }
     }
         return 0;
-}
+}*/
 
 //#include "PersonalBudget.h"
-#include "AdresatMenedzer.h"
-//#include "Adresat.h"
-//#include "PlikZAdresatami.h"
+#include "UserManager.h" //=> to do testowania
+#include "User.h"
+#include "FileWithUsers.h"
 
-    int _main()
+int main()
 {
  //       PlikZAdresatami plikZAdresatami();
-        AdresatMenedzer adresatMenedzer("AdresaciTest.txt",1);
-
-        vector <Adresat> adresaci;
+        //AdresatMenedzer adresatMenedzer("AdresaciTest.txt",1);
+        UserManager userManager("users.xml");
+        FileWithUsers fileWithUsers();
+        //vector <Adresat> adresaci;
 //        AdresatMenedzer adresatMenedzer;
 
 //        adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
        // adresatMenedzer.wyszukajAdresatowPoImieniu();
         //adresatMenedzer.wyszukajAdresatowPoNazwisku();
-        adresatMenedzer.wyswietlWszystkichAdresatow();
+        //adresatMenedzer.wyswietlWszystkichAdresatow();
         //adresatMenedzer.edytujAdresata();
-        adresatMenedzer.usunAdresata();
-        adresatMenedzer.wyswietlWszystkichAdresatow();
+        //adresatMenedzer.usunAdresata();
+        //adresatMenedzer.wyswietlWszystkichAdresatow();
+
+        //userManager.registerUser();//("Kasia", "Kuswik", "kaku", "Slonce123");
+        //userManager.loginUser();
+        userManager.logoutUser();
+       // cout << user << endl;//nie wiem czy nie powinno byc cos innego;
 
     return 0;
 }

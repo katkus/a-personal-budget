@@ -36,3 +36,17 @@
 	<vector>
 	"Markup.h"
 
+1303067212 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/XML-cwiczenia/XMLExample/users/Markup.cpp
+	<stdio.h>
+	"Markup.h"
+	<errno.h>
+	<iconv.h>
+	<windows.h>
+	<mbstring.h>
+
+1303067212 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/XML-cwiczenia/XMLExample/users/Markup.h
+	<stdlib.h>
+	<string.h>
+	<string>
+	<afx.h>
+

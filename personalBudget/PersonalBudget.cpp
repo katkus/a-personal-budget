@@ -7,10 +7,10 @@ void PersonalBudget::registerUser()
 void PersonalBudget::loginUser()
 {
     userManager.loginUser();
-    /*if (userManager.isUserLoggedIn())
-    {
-        budgetManager= new BudgetManager (FILE_NAME_WITH_EARNING, userManagerMenedzer.getLoggedInUserId()); //co z podziałem na incomes i expenses??
-    }*/
+    //if (userManager.isUserLoggedIn())
+    //{
+    //    budgetManager= new BudgetManager (FILE_NAME_WITH_EARNING, userManagerMenedzer.getLoggedInUserId()); //co z podziałem na incomes i expenses??
+    //}
 }
 void PersonalBudget::logoutUser()
 {
@@ -18,10 +18,10 @@ void PersonalBudget::logoutUser()
     //delete budgetManager;
     //budgetManager = NULL;
 }
-void PersonalBudget::changePassword()
+/*void PersonalBudget::changePassword()
 {
     userManager.changePassword();
-}
+}*/
 /*void PersonalBudget::addIncome()
 {
     if(userManager.isUserLoggedIn())
@@ -45,7 +45,7 @@ void PersonalBudget::changePassword()
         cout << "Aby dodac zarobek, nalezy najpierw sie zalogowac." << endl;
         system("read"); // Windows system("pause")
     }
-}*
+}*/
 /*void PersonalBudget::displayCurrentMonthsBalanceSheet()
 {
     budgetManager -> displayCurrentMonthsBalanceSheet();
@@ -59,11 +59,11 @@ void PersonalBudget::displayBalanceSheetFromSelectedTimePeriod()
     budgetManager -> displayBalanceSheetFromSelectedTimePeriod();
 }*/
 
-bool PersonalBudget::isUserLoggedIn()
+/*bool PersonalBudget::isUserLoggedIn()
 {
     return userManager.isUserLoggedIn();
-}
-char PersonalBudget::selectOptionFromMainMenu()
+}*/
+/*char PersonalBudget::selectOptionFromMainMenu()
 {
     char choice;
 
@@ -78,8 +78,8 @@ char PersonalBudget::selectOptionFromMainMenu()
     choice = AuxiliaryMethods::loadCharacter();
 
     return choice;
-}
-char PersonalBudget::selectOptionFromBudgetMenu()
+}*/
+/*char PersonalBudget::selectOptionFromBudgetMenu()
 {
     char choice;
 
@@ -99,4 +99,4 @@ char PersonalBudget::selectOptionFromBudgetMenu()
     choice = AuxiliaryMethods::loadCharacter();
 
     return choice;
-}
+}*/
