@@ -106,10 +106,8 @@ void UserManager::loginUser()
 void UserManager::logoutUser()
 {
     loggedInUserId = 0;
-    //cout << "Koniec"<< endl; =>test
-    //system("read"); =>test
 }
-/*void UserManager::changePassword()
+void UserManager::changePassword()
 {
     string newPassword = "";
     cout << "Podaj nowe haslo: ";
@@ -120,19 +118,20 @@ void UserManager::logoutUser()
         if (users[i].getId() == loggedInUserId)
         {
             users[i].setPassword(newPassword);
+            fileWithUsers.saveChangedPassword(users[i]);//, newPassword, loggedInUserId);
             cout << "Haslo zostalo zmienione." << endl << endl;
             system("read"); //Windows system("pause");
         }
     }
-    fileWithUsers.saveAllUsersToFile(users);
-}*/
-/*bool UserManager::isUserLoggedIn()
+    //fileWithUsers.saveChangedPassword(users, newPassword, loggedInUserId);//newPassword =>getNewPassword; nie wystarczy przekazac samego usera?? //fileWithUsers.saveChangedPassword(users, newPassword, loggedInUserId);
+}
+bool UserManager::isUserLoggedIn()
 {
     if (loggedInUserId > 0)
         return true;
     else
         return false;
-}*/
+}
 int UserManager::getLoggedInUserId()
 {
     return loggedInUserId;

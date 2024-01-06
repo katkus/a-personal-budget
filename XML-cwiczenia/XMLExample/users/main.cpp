@@ -72,7 +72,7 @@ void wypiszDane(vector <Test> &testy) {
 }
 
 
-int _main() {
+int main() {
     string imie, password;
     CMarkup xml;
 
@@ -252,6 +252,7 @@ int _main() {
     */
     vector <Uzytkownik> uzytkownicy;
     Uzytkownik uzytkownik;
+    string newPassword = "kram";
 
     if (fileExists) {
         xml.FindElem();
@@ -275,11 +276,38 @@ int _main() {
         wypiszWszystkichUzytkownikow(uzytkownicy);
     }
     xml.OutOfElem();
+    xml.ResetMainPos();
+
+    if (fileExists) {
+        xml.FindElem();
+        xml.IntoElem();
+        while (xml.FindElem("User")) {
+            xml.FindChildElem("UserId");
+            int userId = atoi( MCD_2PCSZ(xml.GetChildData()));
+            if (userId == 3) {
+                xml.FindChildElem("Password");
+                xml.SetChildData(newPassword);
+            }
+            for (int i = 0; i< (int) uzytkownicy.size(); i++) {
+                if(uzytkownicy[i].pobierzId()==3)
+                    uzytkownicy[i].ustawHaslo(newPassword);
+            }
+
+       xml.Save("users.xml");
+
+        }
+
+        cout << "Po podmianie: " << endl;
+        wypiszWszystkichUzytkownikow(uzytkownicy);
+        xml.OutOfElem();
+
+    }
 
     return 0;
+
 }
 
-int main() {
+int M_main() {
     Test test;
     vector <Test> testy;
     CMarkup xml;

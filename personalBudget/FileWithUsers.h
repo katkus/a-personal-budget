@@ -16,7 +16,7 @@ using namespace std;
 
 class FileWithUsers : public XMLFile
 {
-    CMarkup xml;//nie wiem czy nie powinno to być bezpośrednio w metodach.
+    CMarkup xml;
     //string zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(Uzytkownik uzytkownik);
    User getUserData (string oneUserData);
 
@@ -25,6 +25,6 @@ public:
     FileWithUsers(string fileNameWithUsers) : XMLFile(fileNameWithUsers) {};
     void addUserToFile (User users);
     vector <User> loadUsersFromFile();
-    void saveAllUsersToFile (vector <User> &users);
+    void saveChangedPassword (User user);//, string newPassword, int loggedInUserId);//void saveChangedPassword (vector <User> &users, string newPassword, int loggedInUserId);
 };
 #endif // FILEWITHUSERS_H

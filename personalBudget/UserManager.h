@@ -34,8 +34,8 @@ public:
     void registerUser();
     void loginUser();
     void logoutUser();
-    //void changePassword();
-    //bool isUserLoggedIn();
+    void changePassword();
+    bool isUserLoggedIn();
     int getLoggedInUserId();
 } ;
 #endif // USERMANAGER_H

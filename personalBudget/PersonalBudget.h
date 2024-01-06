@@ -30,7 +30,7 @@ public:
     void registerUser();
     void loginUser();
     void logoutUser();
-    //void changePassword();
+    void changePassword();
     //void addIncome();
     //void addExpense();
    // void displayCurrentMonthsBalanceSheet();

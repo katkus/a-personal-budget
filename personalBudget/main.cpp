@@ -89,8 +89,9 @@ int main()
         //adresatMenedzer.wyswietlWszystkichAdresatow();
 
         //userManager.registerUser();//("Kasia", "Kuswik", "kaku", "Slonce123");
-        //userManager.loginUser();
-        userManager.logoutUser();
+        userManager.loginUser();
+        userManager.changePassword();
+        //userManager.logoutUser();
        // cout << user << endl;//nie wiem czy nie powinno byc cos innego;
 
     return 0;

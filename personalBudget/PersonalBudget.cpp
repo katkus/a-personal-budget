@@ -18,10 +18,10 @@ void PersonalBudget::logoutUser()
     //delete budgetManager;
     //budgetManager = NULL;
 }
-/*void PersonalBudget::changePassword()
+void PersonalBudget::changePassword()
 {
     userManager.changePassword();
-}*/
+}
 /*void PersonalBudget::addIncome()
 {
     if(userManager.isUserLoggedIn())

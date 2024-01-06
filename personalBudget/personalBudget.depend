@@ -28,15 +28,15 @@
 1701893701 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/User.h
 	<iostream>
 
-1702419752 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.cpp
+1702761988 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.cpp
 	"PersonalBudget.h"
 
-1702419732 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.h
+1702420244 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.h
 	<iostream>
 	<string>
 	"UserManager.h"
 
-1702419787 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/UserManager.h
+1702420409 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/UserManager.h
 	<iostream>
 	<vector>
 	<cstdlib>
@@ -45,7 +45,7 @@
 	"User.h"
 	"FileWithUsers.h"
 
-1701894538 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.h
+1704536613 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -63,13 +63,13 @@
 1702413166 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/XMLFile.cpp
 	"XMLFile.h"
 
-1702419508 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.cpp
+1702761923 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.cpp
 	"FileWithUsers.h"
 
-1702419779 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/UserManager.cpp
+1702932094 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/UserManager.cpp
 	"UserManager.h"
 
-1702419850 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/main.cpp
+1702929526 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/main.cpp
 	<iostream>
 	"PersonalBudget.h"
 	"UserManager.h"

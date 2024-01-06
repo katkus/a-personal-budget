@@ -155,7 +155,7 @@
 +FileWithUsers()
 +addUserToFile(): void
 +loadUsersFromFile(): vector &lt;User&gt;
-+saveAllUsersToFile(): void</panel_attributes>
++saveChangedPassword(): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
