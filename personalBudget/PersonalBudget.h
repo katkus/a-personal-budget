@@ -36,8 +36,8 @@ public:
    // void displayCurrentMonthsBalanceSheet();
     //void displayPreviousMonthsBalanceSheet();
    // void displayBalanceSheetFromSelectedTimePeriod();
-    //bool isUserLoggedIn();
-    //char selectOptionFromMainMenu();
-    //char selectOptionFromBudgetMenu();
+    bool isUserLoggedIn();
+    char selectOptionFromMainMenu();
+    char selectOptionFromBudgetMenu();
 };
 #endif // PERSONALBUDGET_

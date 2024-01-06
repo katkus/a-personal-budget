@@ -59,11 +59,11 @@ void PersonalBudget::displayBalanceSheetFromSelectedTimePeriod()
     budgetManager -> displayBalanceSheetFromSelectedTimePeriod();
 }*/
 
-/*bool PersonalBudget::isUserLoggedIn()
+bool PersonalBudget::isUserLoggedIn()
 {
     return userManager.isUserLoggedIn();
-}*/
-/*char PersonalBudget::selectOptionFromMainMenu()
+}
+char PersonalBudget::selectOptionFromMainMenu()
 {
     char choice;
 
@@ -78,8 +78,8 @@ void PersonalBudget::displayBalanceSheetFromSelectedTimePeriod()
     choice = AuxiliaryMethods::loadCharacter();
 
     return choice;
-}*/
-/*char PersonalBudget::selectOptionFromBudgetMenu()
+}
+char PersonalBudget::selectOptionFromBudgetMenu()
 {
     char choice;
 
@@ -99,4 +99,4 @@ void PersonalBudget::displayBalanceSheetFromSelectedTimePeriod()
     choice = AuxiliaryMethods::loadCharacter();
 
     return choice;
-}*/
+}

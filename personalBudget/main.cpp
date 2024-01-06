@@ -3,10 +3,10 @@
 #include "PersonalBudget.h"
 
 using namespace std;
-/*
-int _Main()
+
+int main()
 {
-   PersonalBudget personalBudget ("users.xml", "incomes.txml", "expenses.xml");
+   PersonalBudget personalBudget ("users.xml");//, "incomes.xml", "expenses.xml");
 
   char choice;
 
@@ -39,7 +39,7 @@ int _Main()
 
             switch (choice)
             {
-            case '1':
+           /* case '1':
                 personalBudget.addIncome();
                 break;
             case '2':
@@ -54,7 +54,7 @@ int _Main()
             case '5':
                 personalBudget.displayBalanceSheetFromSelectedTimePeriod();
                 break;
-            case '6':
+            case '6':*/
                 personalBudget.changePassword();
                 break;
             case '7':
@@ -64,10 +64,10 @@ int _Main()
         }
     }
         return 0;
-}*/
+}
 
 //#include "PersonalBudget.h"
-#include "UserManager.h" //=> to do testowania
+/*#include "UserManager.h" //=> to do testowania
 #include "User.h"
 #include "FileWithUsers.h"
 
@@ -95,4 +95,4 @@ int main()
        // cout << user << endl;//nie wiem czy nie powinno byc cos innego;
 
     return 0;
-}
+}*/

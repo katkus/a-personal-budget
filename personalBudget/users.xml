@@ -14,4 +14,11 @@
 <Login>kamzie</Login>
 <Password>Ptak123</Password>
 </User>
+<User>
+<UserId>3</UserId>
+<FirstName>Franek</FirstName>
+<LastName>Ziemba</LastName>
+<Login>frazie</Login>
+<Password>Mleko123</Password>
+</User>
 </Users>

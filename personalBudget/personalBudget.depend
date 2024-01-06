@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1701804745 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/AuxiliaryMethods.cpp
+1704543917 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/AuxiliaryMethods.cpp
 	"AuxiliaryMethods.h"
 
-1701804638 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/AuxiliaryMethods.h
+1704543869 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/AuxiliaryMethods.h
 	<iostream>
 	<sstream>
 	<fstream>
@@ -28,10 +28,10 @@
 1701893701 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/User.h
 	<iostream>
 
-1702761988 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.cpp
+1704544014 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.cpp
 	"PersonalBudget.h"
 
-1702420244 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.h
+1704543993 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.h
 	<iostream>
 	<string>
 	"UserManager.h"
@@ -45,7 +45,7 @@
 	"User.h"
 	"FileWithUsers.h"
 
-1704536613 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.h
+1704536674 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -63,7 +63,7 @@
 1702413166 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/XMLFile.cpp
 	"XMLFile.h"
 
-1702761923 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.cpp
+1704536681 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.cpp
 	"FileWithUsers.h"
 
 1702932094 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/UserManager.cpp
