@@ -7,11 +7,11 @@ using namespace std;
 
 class User
 {
-    int id;
-    string firstName;
-    string lastName;
-    string login;
-    string password;
+    int id = 0;
+    string firstName = "";
+    string lastName = "";
+    string login = "";
+    string password = "";
 
 public:
     void setId (int newId);

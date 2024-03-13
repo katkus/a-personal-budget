@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 
 #include "PersonalBudget.h"
 
@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-   PersonalBudget personalBudget ("users.xml");//, "incomes.xml", "expenses.xml");
+   PersonalBudget personalBudget ("users.xml", "incomes.xml", "expenses.xml");
 
   char choice;
 
@@ -39,10 +39,10 @@ int main()
 
             switch (choice)
             {
-           /* case '1':
+            case '1':
                 personalBudget.addIncome();
                 break;
-            case '2':
+            /*case '2':
                 personalBudget.addExpense();
                 break;
             case '3':
@@ -53,8 +53,8 @@ int main()
                 break;
             case '5':
                 personalBudget.displayBalanceSheetFromSelectedTimePeriod();
-                break;
-            case '6':*/
+                break;*/
+          /*  case '6':
                 personalBudget.changePassword();
                 break;
             case '7':
@@ -64,12 +64,17 @@ int main()
         }
     }
         return 0;
-}
+}*/
 
-//#include "PersonalBudget.h"
-/*#include "UserManager.h" //=> to do testowania
+#include "PersonalBudget.h"
+#include "UserManager.h" //=> to do testowania
 #include "User.h"
 #include "FileWithUsers.h"
+#include "BudgetManager.h"
+#include "Earning.h"
+#include "FileWithEarning.h"
+#include "AuxiliaryMethods.h"
+#include "DateMethods.h"
 
 int main()
 {
@@ -77,6 +82,13 @@ int main()
         //AdresatMenedzer adresatMenedzer("AdresaciTest.txt",1);
         UserManager userManager("users.xml");
         FileWithUsers fileWithUsers();
+        BudgetManager budgetManager ("incomes.xml", "expenses.xml", 1);
+
+        //budgetManager.addIncome();
+        //budgetManager.addIncome();
+
+        budgetManager.addExpense();
+        budgetManager.addExpense();
         //vector <Adresat> adresaci;
 //        AdresatMenedzer adresatMenedzer;
 
@@ -89,10 +101,10 @@ int main()
         //adresatMenedzer.wyswietlWszystkichAdresatow();
 
         //userManager.registerUser();//("Kasia", "Kuswik", "kaku", "Slonce123");
-        userManager.loginUser();
-        userManager.changePassword();
+        //userManager.loginUser();
+        //userManager.changePassword();
         //userManager.logoutUser();
        // cout << user << endl;//nie wiem czy nie powinno byc cos innego;
 
     return 0;
-}*/
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Incomes>
+<Earning>
+<EarningId>1</EarningId>
+<UserId>1</UserId>
+<Date>2024-02-24</Date>
+<Item>Pilnowanie dziecka.</Item>
+<Amount>1200</Amount>
+</Earning>
+<Earning>
+<EarningId>2</EarningId>
+<UserId>1</UserId>
+<Date>2023-12-01</Date>
+<Item>Premia swiateczna.</Item>
+<Amount>800</Amount>
+</Earning>
+<Earning>
+<EarningId>3</EarningId>
+<UserId>1</UserId>
+<Date>2024-02-24</Date>
+<Item>Sprzedaz olx.</Item>
+<Amount>50</Amount>
+</Earning>
+</Incomes>

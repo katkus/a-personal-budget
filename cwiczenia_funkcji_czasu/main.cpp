@@ -5,8 +5,49 @@
 #include <clocale>
 #include <string>
 #include <algorithm>
+#include <sstream>
 //co zrobić z bibliotekami?? Potrzebne??
 using namespace std;
+
+string getTimeFromSystem ()
+{
+    char bufor [ 64 ];
+    time_t timeTakenFromComputer;
+    time( & timeTakenFromComputer );
+    tm timeTakenFromComputerTM = * localtime( & timeTakenFromComputer );
+    strftime( bufor, sizeof( bufor ), "%Y-%m-%d", & timeTakenFromComputerTM );
+    string date = bufor;
+    return date;
+}
+
+int convertStringToInt (string number)
+{
+    int numberInt;
+    istringstream iss(number);
+    iss >> numberInt;
+
+    return numberInt;
+}
+
+int getYearFromDate (string date) {
+
+int year = convertStringToInt((date.substr(0,4)));
+return year;
+
+}
+
+int getMonthFromDate (string date) {
+
+int month = convertStringToInt((date.substr(5,2)));
+return month;
+
+}
+int getDayFromDate (string date) {
+
+int day = convertStringToInt((date.substr(8,2)));
+return day;
+}
+
 
 string getDate ()
 {
@@ -77,7 +118,7 @@ void displayAllDate (string date[])
 }
 
 int main() {
-    string date [] = {"1983-01-22", "1970-06-01", "1970-03-15", "2020-06-15", "" };
+  /*  string date [] = {"1983-01-22", "1970-06-01", "1970-03-15", "2020-06-15", "" };
     int size = 5;
 
     date [4] = getDate();
@@ -87,7 +128,21 @@ int main() {
     sort(date, date+5);
     //sort(vec.begin(), vec.end()); => przy pracy na wektorach;
     cout<< "posortowane: "<<endl;
-    displayAllDate(date);
+    displayAllDate(date);*/
 
+ /////////////////////////////////////////////////////////
+ string date;
+ cin >> date;
+
+    int year = getYearFromDate(date);
+    int day = getDayFromDate(date);
+    int month = getMonthFromDate(date);
+
+    string currentDate = getTimeFromSystem();
+    int currentYear = getYearFromDate(currentDate);
+    int currentMonth = getMonthFromDate(currentDate);
+
+    cout << " Wprowadzona data: " << year << "," << day << "," << month << "," << endl;
+    cout << "Obecna data: " << currentYear << "," << currentMonth << endl;
     return 0;
 }

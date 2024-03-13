@@ -7,45 +7,45 @@ void PersonalBudget::registerUser()
 void PersonalBudget::loginUser()
 {
     userManager.loginUser();
-    //if (userManager.isUserLoggedIn())
-    //{
-    //    budgetManager= new BudgetManager (FILE_NAME_WITH_EARNING, userManagerMenedzer.getLoggedInUserId()); //co z podziałem na incomes i expenses??
-    //}
+    if (userManager.isUserLoggedIn())
+    {
+        budgetManager= new BudgetManager (FILE_NAME_WITH_INCOMES, FILE_NAME_WITH_EXPENSES, userManager.getLoggedInUserId());
+    }
 }
 void PersonalBudget::logoutUser()
 {
     userManager.logoutUser();
-    //delete budgetManager;
-    //budgetManager = NULL;
+    delete budgetManager;
+    budgetManager = NULL;
 }
 void PersonalBudget::changePassword()
 {
     userManager.changePassword();
 }
-/*void PersonalBudget::addIncome()
+void PersonalBudget::addIncome()
 {
     if(userManager.isUserLoggedIn())
     {
-      budgetManager -> addEarning();//podział na incomes i expenses?? addIncome??
+      budgetManager -> addIncome();
     }
     else
     {
         cout << "Aby dodac zarobek, nalezy najpierw sie zalogowac." << endl;
         system("read"); // Windows system("pause")
     }
-}*/
-/*void PersonalBudget::addExpense()
+}
+void PersonalBudget::addExpense()
 {
     if(userManager.isUserLoggedIn())
     {
-      budgetManager -> addEarning();//podział na incomes i expenses??
+      budgetManager -> addExpense();
     }
     else
     {
         cout << "Aby dodac zarobek, nalezy najpierw sie zalogowac." << endl;
         system("read"); // Windows system("pause")
     }
-}*/
+}
 /*void PersonalBudget::displayCurrentMonthsBalanceSheet()
 {
     budgetManager -> displayCurrentMonthsBalanceSheet();

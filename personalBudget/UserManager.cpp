@@ -51,7 +51,7 @@ int UserManager::getNewUserId()
     if (users.empty() == true)
         return 1;
     else
-        return users.back().getId()+ 1;
+        return users.back().getId()+ 1;//users.back().getId()+ 1;//return users.back().getId() + 1;//return users.getLastId();//users.back().getId()+ 1;
 }
 bool UserManager::loginExists(string login)
 {
@@ -100,6 +100,8 @@ void UserManager::loginUser()
         itr++;
     }
     cout << "Nie ma uzytkownika z takim loginem" << endl << endl;
+
+//    cout << "LastId to:" << lastId << endl;// => do spr przy okazji...
     system("read"); // Windows system("pause");
     return ;
 }
@@ -123,7 +125,7 @@ void UserManager::changePassword()
             system("read"); //Windows system("pause");
         }
     }
-    //fileWithUsers.saveChangedPassword(users, newPassword, loggedInUserId);//newPassword =>getNewPassword; nie wystarczy przekazac samego usera?? //fileWithUsers.saveChangedPassword(users, newPassword, loggedInUserId);
+
 }
 bool UserManager::isUserLoggedIn()
 {

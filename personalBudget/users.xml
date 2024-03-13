@@ -5,7 +5,7 @@
 <FirstName>Kasia</FirstName>
 <LastName>Ziemba</LastName>
 <Login>kaszie</Login>
-<Password>Slon123</Password>
+<Password>Slonce123</Password>
 </User>
 <User>
 <UserId>2</UserId>
@@ -20,5 +20,12 @@
 <LastName>Ziemba</LastName>
 <Login>frazie</Login>
 <Password>Mleko123</Password>
+</User>
+<User>
+<UserId>4</UserId>
+<FirstName>Izabela</FirstName>
+<LastName>Ziemba</LastName>
+<Login>izaziem</Login>
+<Password>Baletnica123</Password>
 </User>
 </Users>

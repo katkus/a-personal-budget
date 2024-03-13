@@ -8,3 +8,13 @@
 	<cstdio>
 	<clocale>
 
+1707160039 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/cwiczenia_funkcji_czasu/main.cpp
+	<iostream>
+	<time.h>
+	<ctime>
+	<cstdio>
+	<clocale>
+	<string>
+	<algorithm>
+	<sstream>
+

@@ -13,5 +13,14 @@ bool XMLFile::isFileEmpty(fstream &XMLFile)
     else
         return false;
 }
+int XMLFile::setLastId (int id) { //do spr czy dziala
+lastId = id;
+return lastId;
+}
+
+int XMLFile::getLastId()
+{
+    return lastId;
+}
 
 

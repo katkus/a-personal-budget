@@ -1,20 +1,26 @@
 #include "AuxiliaryMethods.h"
 
-/*string MetodyPomocnicze::konwerjsaIntNaString(int liczba)
+string AuxiliaryMethods::convertIntToString(int number)
 {
     ostringstream ss;
-    ss << liczba;
+    ss << number;
     string str = ss.str();
     return str;
 }
-int MetodyPomocnicze::konwersjaStringNaInt(string liczba)
+int AuxiliaryMethods::convertStringToInt(string number)
 {
-    int liczbaInt;
-    istringstream iss(liczba);
-    iss >> liczbaInt;
+    int numberInt;
+    istringstream iss(number);
+    iss >> numberInt;
 
-    return liczbaInt;
-}*/
+    return numberInt;
+}
+
+double AuxiliaryMethods::convertStringToDouble(string amount) {
+ double amountDouble = atof(amount.c_str());
+ return amountDouble;
+}
+
 string AuxiliaryMethods::loadLine()
 {
     string entry = "";
@@ -49,6 +55,46 @@ char AuxiliaryMethods::loadCharacter()
         cout << "To nie jest pojedynczy znak. Wpisz ponownie." << endl;
     }
     return character;
+}
+string AuxiliaryMethods::saveDateWithoutHyphen (string date) {
+
+string dateWithoutHyphen = (date.substr(0,4)) + (date.substr(5,2)) + (date.substr(8,2));
+
+return dateWithoutHyphen;
+}
+string AuxiliaryMethods::saveDateWithHyphen (string date) {
+
+string dateWithHyphen = (date.substr(0,4)) + (date.substr(4,2)) + (date.substr(6,2));
+dateWithHyphen.insert(4, "-");
+dateWithHyphen.insert(7, "-");
+
+return dateWithHyphen;
+}
+
+string AuxiliaryMethods::replaceCommaToDot (string amount) {
+int sizeOfAmount = amount.size();
+cout << "sizeOfAmount:" << sizeOfAmount << endl;
+    for (int i = 0; i < sizeOfAmount; i++) { // rzutowanie typu?? (int) przy amount.length()
+
+        if ((amount[i] == ',')||(amount[i]== '.')) {
+            amount[i] = '.';
+            if (sizeOfAmount > i+3) {
+                    //int l = sizeOfAmount-i-3;
+                    if (amount[i+2]>4)
+                        amount[i+2]++;
+                amount.erase(i+3, sizeOfAmount-i-3);
+                break;
+            }
+        }
+       // if (amount[i] == '.') {
+         //   if (sizeOfAmount > i+3) {
+           //     amount.erase(i+3, sizeOfAmount-i-3);
+        //}
+
+        //}
+    }
+
+    return amount;
 }
 /*
 string MetodyPomocnicze::pobierzLiczbe(string tekst, int pozycjaZnaku)

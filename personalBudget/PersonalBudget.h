@@ -5,34 +5,35 @@
 #include <string>
 
 #include "UserManager.h"
-//#include "AdresatMenedzer.h"
+#include "BudgetManager.h"
 
 using namespace std;
 
 class PersonalBudget
 {
     UserManager userManager;
-    //BudgetManager *budgetManager;
-    //const string FILE_NAME_WITH_EARNING;
+    BudgetManager *budgetManager;
+    const string FILE_NAME_WITH_INCOMES;
+    const string FILE_NAME_WITH_EXPENSES;
 
 
 public:
-    PersonalBudget(string fileNameWithUsers)//, string fileNameWithEarning)
-    : userManager(fileNameWithUsers)//, FILE_NAME_WITH_EARNING(fileNameWithEarning)//nie wiem czy tu nie powinno być rozdzielenie na incomes i expenses??
+    PersonalBudget(string fileNameWithUsers, string fileNameWithIncomes, string fileNameWithExpenses)
+    : userManager(fileNameWithUsers), FILE_NAME_WITH_INCOMES(fileNameWithIncomes), FILE_NAME_WITH_EXPENSES(fileNameWithExpenses)
     {
-       // budgetManager = NULL;
+        budgetManager = NULL;
     };
     ~PersonalBudget()
     {
-        //delete budgetManager;
-        //budgetManager = NULL;
+        delete budgetManager;
+        budgetManager = NULL;
     };
     void registerUser();
     void loginUser();
     void logoutUser();
     void changePassword();
-    //void addIncome();
-    //void addExpense();
+    void addIncome();
+    void addExpense();
    // void displayCurrentMonthsBalanceSheet();
     //void displayPreviousMonthsBalanceSheet();
    // void displayBalanceSheetFromSelectedTimePeriod();

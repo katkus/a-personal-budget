@@ -1,6 +1,11 @@
 #include "FileWithUsers.h"
 
-void FileWithUsers::addUserToFile(User user)
+/*int setLastId (int userId) { //do zastanowienia sie czy nie mozna wstawic metody do XML file
+lastId = userId;
+return lastId;
+}*/
+
+void FileWithUsers::addUserToFile(User &user) // do zastanowienia sie const Operation &operation =>to na koniec
 {
     bool fileExists = xml.Load(getFileName());
 
@@ -19,9 +24,15 @@ void FileWithUsers::addUserToFile(User user)
     xml.AddElem("LastName",user.getLastName());
     xml.AddElem("Login", user.getLogin());
     xml.AddElem("Password", user.getPassword());
+    xml.OutOfElem();
 
-    xml.Save(getFileName());
-
+   if (xml.Save(getFileName())) {
+   lastId++; //setLastId(user.getId());
+    cout << "Dane zostaly zapisane." << endl;}
+    else {
+        cout << "Nie udalo sie zapisac danych." << endl;
+    }
+//return lastId = user.getId(); // return lastId;
 /*string FileWithUsers::zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(Uzytkownik uzytkownik) =>to chyba jednak zniknie...
     string liniaZDanymiUzytkownika = "";
 
@@ -39,12 +50,13 @@ vector <User> FileWithUsers::loadUsersFromFile()
    bool fileExists = xml.Load(getFileName());
 
        if (fileExists) {
-        xml.FindElem();
-        xml.IntoElem();
+            xml.ResetPos();
+            xml.FindElem();
+            xml.IntoElem();
 
         while (xml.FindElem("User")) {
             xml.FindChildElem("UserId");
-            int userId = atoi( MCD_2PCSZ(xml.GetChildData()));
+            int userId = atoi( MCD_2PCSZ(xml.GetChildData()));  //do sprawdzenia czy nei mozna tego przeksztalcic do int userId = AuxiliaryMethods::convertStringToInt(MCD_2PCSZ(xml.GetChildData()));
             user.setId(userId);
             xml.FindChildElem("FirstName");
             MCD_STR firstName = xml.GetChildData();
@@ -60,12 +72,22 @@ vector <User> FileWithUsers::loadUsersFromFile()
             user.setPassword(password);
 
             users.push_back(user);
+            lastId++;
         }
+        xml.OutOfElem();//nie wiem czy to dobra pozycja na ta funckje
+        //lastId = getUserId();//setLastId(user.getId());
     }
+    else
+        cout << "Nie mozna otworzyc pliku." << endl;
+    //lastId = userId;//setLastId(user.getId());
     return users;
 }
+/*int setLastId (int userId) {
+lastId = userId;
+return lastId;
+}*/
 
-void FileWithUsers::saveChangedPassword(User user)//, string newPassword, int loggedInUserId)
+void FileWithUsers::saveChangedPassword(User &user)//, string newPassword, int loggedInUserId) // const stała & do zastosowania i spr czy bedzie ok...działałoby szybciej
 //void FileWithUsers::saveChangedPassword(vector <User> &users, string newPassword, int loggedInUserId) // =>zapis danych po zmianie hasla; wyszukałabym uytkownika o podanym iD i mu zmieniła hasło. Czy tak można??
 {//.saveChangePassword(vector <User> &users, string newPassword, int loggedInUserId)
     /*fstream XMLFile;
@@ -100,19 +122,25 @@ void FileWithUsers::saveChangedPassword(User user)//, string newPassword, int lo
    bool fileExists = xml.Load(getFileName());// bool fileExists = xml.Load("users.xml");
 
        if (fileExists) {
+        xml.ResetPos();
         xml.FindElem();
         xml.IntoElem();
         while (xml.FindElem("User")) {
             xml.FindChildElem("UserId");
-            int userId = atoi( MCD_2PCSZ(xml.GetChildData()));
+            int userId = atoi( MCD_2PCSZ(xml.GetChildData())); //to samo co powyzej; skorzystac z funkcji int userId = AuxiliaryMethods::convertStringToInt(MCD_2PCSZ(xml.GetChildData()))l
             if (userId == user.getId())/*loggedInUserId*/ {//if (userId == loggedInUserId)
                 xml.FindChildElem("Password");
                 xml.SetChildData(user.getPassword());
             }
 
-       xml.Save(getFileName());// xml.Save("users.xml");
-
+       if (xml.Save(getFileName())) {// xml.Save("users.xml");
+        cout << "Nowe haslo zostalo zapisane do pliku." << endl;
         }
+        else {
+            cout << "Nie udalo sie zapisac hasla w pliku." << endl;
+        }
+}
+            xml.OutOfElem();
 }
 }
 
