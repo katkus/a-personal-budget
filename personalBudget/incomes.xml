@@ -21,4 +21,109 @@
 <Item>Sprzedaz olx.</Item>
 <Amount>50</Amount>
 </Earning>
+<Earning>
+<EarningId>4</EarningId>
+<UserId>1</UserId>
+<Date>2024-04-21</Date>
+<Item>paczek</Item>
+<Amount>7.89</Amount>
+</Earning>
+<Earning>
+<EarningId>5</EarningId>
+<UserId>1</UserId>
+<Date>2024-04-21</Date>
+<Item>konie</Item>
+<Amount>1987.98</Amount>
+</Earning>
+<Earning>
+<EarningId>6</EarningId>
+<UserId>1</UserId>
+<Date>2024-04-19</Date>
+<Item>zakupy spozywcze</Item>
+<Amount>239.99</Amount>
+</Earning>
+<Earning>
+<EarningId>7</EarningId>
+<UserId>1</UserId>
+<Date>2024-04-21</Date>
+<Item>olx</Item>
+<Amount>7.90</Amount>
+</Earning>
+<Earning>
+<EarningId>8</EarningId>
+<UserId>1</UserId>
+<Date>2024-04-21</Date>
+<Item>wykonanie strony internetowej</Item>
+<Amount>4587.99</Amount>
+</Earning>
+<Earning>
+<EarningId>1</EarningId>
+<UserId>2</UserId>
+<Date>2024-04-22</Date>
+<Item>program ksiegowy</Item>
+<Amount>10200.88</Amount>
+</Earning>
+<Earning>
+<EarningId>2</EarningId>
+<UserId>2</UserId>
+<Date>2024-03-02</Date>
+<Item>tort</Item>
+<Amount>169.99</Amount>
+</Earning>
+<Earning>
+<EarningId>3</EarningId>
+<UserId>2</UserId>
+<Date>2024-04-22</Date>
+<Item>bazy danych</Item>
+<Amount>8765.87</Amount>
+</Earning>
+<Earning>
+<EarningId>9</EarningId>
+<UserId>1</UserId>
+<Date>2024-04-23</Date>
+<Item>sprzedaz Allegro</Item>
+<Amount>345.98</Amount>
+</Earning>
+<Earning>
+<EarningId>4</EarningId>
+<UserId>2</UserId>
+<Date>2024-04-22</Date>
+<Item>sprzedaz sadzonek</Item>
+<Amount>124.98</Amount>
+</Earning>
+<Earning>
+<EarningId>10</EarningId>
+<UserId>1</UserId>
+<Date>2024-04-23</Date>
+<Item>sprzedaz samochodu</Item>
+<Amount>69783</Amount>
+</Earning>
+<Earning>
+<EarningId>11</EarningId>
+<UserId>1</UserId>
+<Date>2024-04-23</Date>
+<Item>sprzedaz rowera</Item>
+<Amount>549</Amount>
+</Earning>
+<Earning>
+<EarningId>12</EarningId>
+<UserId>1</UserId>
+<Date>2020-08-02</Date>
+<Item>sprzedaz samochodu</Item>
+<Amount>10200</Amount>
+</Earning>
+<Earning>
+<EarningId>1</EarningId>
+<UserId>3</UserId>
+<Date>2024-04-23</Date>
+<Item>piekny usmiech</Item>
+<Amount>20223</Amount>
+</Earning>
+<Earning>
+<EarningId>13</EarningId>
+<UserId>1</UserId>
+<Date>2000-01-01</Date>
+<Item>ksiazki</Item>
+<Amount>23.88</Amount>
+</Earning>
 </Incomes>

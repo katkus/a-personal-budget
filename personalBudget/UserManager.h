@@ -13,12 +13,11 @@
 #include "Earning.h"
 #include "FileWithUsers.h"
 #include "XMLFile.h"
-#include "AuxiliaryMethods.h"//??Potrzebne??
+#include "AuxiliaryMethods.h"
 
 using namespace std;
 
-class UserManager
-{
+class UserManager {
     int loggedInUserId;
     vector <User> users;
     FileWithUsers fileWithUsers;
@@ -28,8 +27,7 @@ class UserManager
     bool loginExists(string login);
 
 public:
-    UserManager(string fileNameWithUsers) : fileWithUsers (fileNameWithUsers)
-    {
+    UserManager(string fileNameWithUsers) : fileWithUsers (fileNameWithUsers) {
         loggedInUserId = 0;
         users = fileWithUsers.loadUsersFromFile();
     };

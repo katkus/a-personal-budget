@@ -1,15 +1,9 @@
 #include "FileWithUsers.h"
 
-/*int setLastId (int userId) { //do zastanowienia sie czy nie mozna wstawic metody do XML file
-lastId = userId;
-return lastId;
-}*/
-
-void FileWithUsers::addUserToFile(User &user) // do zastanowienia sie const Operation &operation =>to na koniec
-{
+void FileWithUsers::addUserToFile(User &user) {
     bool fileExists = xml.Load(getFileName());
 
-    if (!fileExists){
+    if (!fileExists) {
 
         xml.SetDoc("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");
         xml.AddElem("Users");
@@ -26,37 +20,26 @@ void FileWithUsers::addUserToFile(User &user) // do zastanowienia sie const Oper
     xml.AddElem("Password", user.getPassword());
     xml.OutOfElem();
 
-   if (xml.Save(getFileName())) {
-   lastId++; //setLastId(user.getId());
-    cout << "Dane zostaly zapisane." << endl;}
-    else {
+    if (xml.Save(getFileName())) {
+        cout << "Dane zostaly zapisane." << endl;
+    } else {
         cout << "Nie udalo sie zapisac danych." << endl;
     }
-//return lastId = user.getId(); // return lastId;
-/*string FileWithUsers::zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(Uzytkownik uzytkownik) =>to chyba jednak zniknie...
-    string liniaZDanymiUzytkownika = "";
-
-    liniaZDanymiUzytkownika += MetodyPomocnicze::konwerjsaIntNaString(uzytkownik.pobierzId())+ '|';
-    liniaZDanymiUzytkownika += uzytkownik.pobierzLogin() + '|';
-    liniaZDanymiUzytkownika += uzytkownik.pobierzHaslo() + '|';
-
-    return liniaZDanymiUzytkownika;*/
 }
-vector <User> FileWithUsers::loadUsersFromFile()
-{
-   User user;
-   vector <User> users;
+vector <User> FileWithUsers::loadUsersFromFile() {
+    User user;
+    vector <User> users;
 
-   bool fileExists = xml.Load(getFileName());
+    bool fileExists = xml.Load(getFileName());
 
-       if (fileExists) {
-            xml.ResetPos();
-            xml.FindElem();
-            xml.IntoElem();
+    if (fileExists) {
+        xml.ResetPos();
+        xml.FindElem();
+        xml.IntoElem();
 
         while (xml.FindElem("User")) {
             xml.FindChildElem("UserId");
-            int userId = atoi( MCD_2PCSZ(xml.GetChildData()));  //do sprawdzenia czy nei mozna tego przeksztalcic do int userId = AuxiliaryMethods::convertStringToInt(MCD_2PCSZ(xml.GetChildData()));
+            int userId = atoi( MCD_2PCSZ(xml.GetChildData()));
             user.setId(userId);
             xml.FindChildElem("FirstName");
             MCD_STR firstName = xml.GetChildData();
@@ -72,75 +55,35 @@ vector <User> FileWithUsers::loadUsersFromFile()
             user.setPassword(password);
 
             users.push_back(user);
-            lastId++;
         }
-        xml.OutOfElem();//nie wiem czy to dobra pozycja na ta funckje
-        //lastId = getUserId();//setLastId(user.getId());
-    }
-    else
+        xml.OutOfElem();
+
+    } else
         cout << "Nie mozna otworzyc pliku." << endl;
-    //lastId = userId;//setLastId(user.getId());
+
     return users;
 }
-/*int setLastId (int userId) {
-lastId = userId;
-return lastId;
-}*/
+void FileWithUsers::saveChangedPassword(User &user) {
+    bool fileExists = xml.Load(getFileName());
 
-void FileWithUsers::saveChangedPassword(User &user)//, string newPassword, int loggedInUserId) // const stała & do zastosowania i spr czy bedzie ok...działałoby szybciej
-//void FileWithUsers::saveChangedPassword(vector <User> &users, string newPassword, int loggedInUserId) // =>zapis danych po zmianie hasla; wyszukałabym uytkownika o podanym iD i mu zmieniła hasło. Czy tak można??
-{//.saveChangePassword(vector <User> &users, string newPassword, int loggedInUserId)
-    /*fstream XMLFile;
-    string lineWithUserData = "";
-    vector <User>::iterator itrEnd = --users.end();
-
-    plikTekstowy.open(pobierzNazwePliku().c_str(), ios::out);
-
-    if (XMLFile.good() == true)
-    {
-        for (vector <User>::iterator itr = users.begin(); itr != users.end(); itr++)
-        {
-            lineWithUserData = zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(*itr); //pobierzDane??//zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(uzytkownik);
-
-            if (itr == itrKoniec)
-            {
-               plikTekstowy << liniaZDanymiUzytkownika;
-            }
-            else
-            {
-                plikTekstowy << liniaZDanymiUzytkownika << endl;
-            }
-            liniaZDanymiUzytkownika = "";
-        }
-    }
-    else
-    {
-        cout << "Nie mozna otworzyc pliku " << pobierzNazwePliku() << endl;
-    }
-    plikTekstowy.close();*/
-
-   bool fileExists = xml.Load(getFileName());// bool fileExists = xml.Load("users.xml");
-
-       if (fileExists) {
+    if (fileExists) {
         xml.ResetPos();
         xml.FindElem();
         xml.IntoElem();
         while (xml.FindElem("User")) {
             xml.FindChildElem("UserId");
-            int userId = atoi( MCD_2PCSZ(xml.GetChildData())); //to samo co powyzej; skorzystac z funkcji int userId = AuxiliaryMethods::convertStringToInt(MCD_2PCSZ(xml.GetChildData()))l
-            if (userId == user.getId())/*loggedInUserId*/ {//if (userId == loggedInUserId)
+            int userId = atoi( MCD_2PCSZ(xml.GetChildData()));
+            if (userId == user.getId()) {
                 xml.FindChildElem("Password");
                 xml.SetChildData(user.getPassword());
             }
-
-       if (xml.Save(getFileName())) {// xml.Save("users.xml");
-        cout << "Nowe haslo zostalo zapisane do pliku." << endl;
         }
-        else {
-            cout << "Nie udalo sie zapisac hasla w pliku." << endl;
+        if (xml.Save(getFileName())) {
+            cout << "Nowe haslo zostalo zapisane." << endl;
+        } else {
+            cout << "Nie udalo sie zapisac hasla." << endl;
         }
-}
-            xml.OutOfElem();
-}
+        xml.OutOfElem();
+    }
 }
 

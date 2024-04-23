@@ -1,47 +1,36 @@
 #include "Earning.h"
 
 
-void Earning::setEarningId (int newEarningId)
-{
+void Earning::setEarningId (int newEarningId) {
     if (newEarningId >= 0)
         earningId = newEarningId;
 }
-void Earning::setUserId (int newUserId)
-{
+void Earning::setUserId (int newUserId) {
     if (newUserId >= 0)
         userId = newUserId;
 }
-void Earning::setDate (int newDate)
-{
+void Earning::setDate (int newDate) {
     date = newDate;
 }
-void Earning::setItem (string newItem)
-{
+void Earning::setItem (string newItem) {
     item = newItem;
 }
-void Earning::setAmount (string newAmount)
-{
+void Earning::setAmount (string newAmount) {
     amount = newAmount;
 }
-
-int Earning::getEarningId ()
-{
+int Earning::getEarningId () {
     return earningId;
 }
-int Earning::getUserId ()
-{
+int Earning::getUserId () {
     return userId;
 }
-int Earning::getDate()
-{
+int Earning::getDate() {
     return date;
 }
-string Earning::getItem ()
-{
+string Earning::getItem () {
     return item;
 }
-string Earning::getAmount ()//double
-{
+string Earning::getAmount () {
     return amount;
 }
 

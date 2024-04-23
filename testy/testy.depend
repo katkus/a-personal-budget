@@ -1,6 +1,8 @@
 # depslib dependency file v1.0
-1708434194 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/testy/main.cpp
+1713815532 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/testy/main.cpp
 	<iostream>
 	<sstream>
 	<cstdlib>
+	<vector>
+	<algorithm>
 

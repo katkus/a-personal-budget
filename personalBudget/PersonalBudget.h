@@ -9,8 +9,7 @@
 
 using namespace std;
 
-class PersonalBudget
-{
+class PersonalBudget {
     UserManager userManager;
     BudgetManager *budgetManager;
     const string FILE_NAME_WITH_INCOMES;
@@ -19,12 +18,10 @@ class PersonalBudget
 
 public:
     PersonalBudget(string fileNameWithUsers, string fileNameWithIncomes, string fileNameWithExpenses)
-    : userManager(fileNameWithUsers), FILE_NAME_WITH_INCOMES(fileNameWithIncomes), FILE_NAME_WITH_EXPENSES(fileNameWithExpenses)
-    {
+        : userManager(fileNameWithUsers), FILE_NAME_WITH_INCOMES(fileNameWithIncomes), FILE_NAME_WITH_EXPENSES(fileNameWithExpenses) {
         budgetManager = NULL;
     };
-    ~PersonalBudget()
-    {
+    ~PersonalBudget() {
         delete budgetManager;
         budgetManager = NULL;
     };
@@ -34,9 +31,9 @@ public:
     void changePassword();
     void addIncome();
     void addExpense();
-   // void displayCurrentMonthsBalanceSheet();
-    //void displayPreviousMonthsBalanceSheet();
-   // void displayBalanceSheetFromSelectedTimePeriod();
+    void displayCurrentMonthsBalanceSheet();
+    void displayPreviousMonthsBalanceSheet();
+    void displayBalanceSheetFromSelectedTimePeriod();
     bool isUserLoggedIn();
     char selectOptionFromMainMenu();
     char selectOptionFromBudgetMenu();

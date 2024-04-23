@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1710345145 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/AuxiliaryMethods.cpp
+1713897447 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/AuxiliaryMethods.cpp
 	"AuxiliaryMethods.h"
 
-1709055948 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/AuxiliaryMethods.h
+1713886165 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/AuxiliaryMethods.h
 	<iostream>
 	<sstream>
 	<fstream>
@@ -23,22 +23,22 @@
 	<string>
 	<afx.h>
 
-1704544587 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/User.cpp
+1712863627 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/User.cpp
 	"User.h"
 
-1705003239 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/User.h
+1712863637 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/User.h
 	<iostream>
 
-1708790657 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.cpp
+1712863366 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.cpp
 	"PersonalBudget.h"
 
-1708788918 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.h
+1712863347 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/PersonalBudget.h
 	<iostream>
 	<string>
 	"UserManager.h"
 	"BudgetManager.h"
 
-1708795222 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/UserManager.h
+1713886607 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/UserManager.h
 	<iostream>
 	<vector>
 	<cstdlib>
@@ -51,7 +51,7 @@
 	"XMLFile.h"
 	"AuxiliaryMethods.h"
 
-1708795322 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.h
+1713886650 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -61,22 +61,22 @@
 	"AuxiliaryMethods.h"
 	"XMLFile.h"
 
-1708425152 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/XMLFile.h
+1713888957 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/XMLFile.h
 	<iostream>
 	<fstream>
 	"Markup.h"
 
-1708425110 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/XMLFile.cpp
+1713889563 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/XMLFile.cpp
 	"XMLFile.h"
 
-1708790429 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.cpp
+1713895991 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithUsers.cpp
 	"FileWithUsers.h"
 
-1708795419 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/UserManager.cpp
+1713895950 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/UserManager.cpp
 	"UserManager.h"
 
-1708793606 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/main.cpp
-	"PersonalBudget.h"
+1713885441 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/main.cpp
+	<iostream>
 	"PersonalBudget.h"
 	"UserManager.h"
 	"User.h"
@@ -100,45 +100,45 @@
 	<fstream>
 	<algorithm>
 
-1710345147 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/BudgetManager.cpp
+1713898808 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/BudgetManager.cpp
 	"BudgetManager.h"
 
-1705733817 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/CalculationMethods.cpp
+1710346629 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/CalculationMethods.cpp
 	"CalculationMethods.h"
 
-1709053059 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/Earning.cpp
+1713816584 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/Earning.cpp
 	"Earning.h"
 
-1709053394 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithEarning.cpp
+1713897545 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithEarning.cpp
 	"FileWithEarning.h"
 
 1705730846 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FormatCheckingData.cpp
 
-1708791929 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/BudgetManager.h
+1713899748 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/BudgetManager.h
 	<iostream>
 	<vector>
 	<cstdlib>
+	<algorithm>
 	"Earning.h"
 	"FileWithEarning.h"
 	"DateMethods.h"
 	"AuxiliaryMethods.h"
 	"Type.h"
 
-1705733798 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/CalculationMethods.h
+1710346629 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/CalculationMethods.h
 	<iostream>
 	<sstream>
 	<fstream>
 	<algorithm>
 
-1709053042 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/Earning.h
+1713816593 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/Earning.h
 	<iostream>
 
-1708793227 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/DateMethods.cpp
+1713899086 source:/home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/DateMethods.cpp
 	"DateMethods.h"
 
-1708789896 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/DateMethods.h
+1713899708 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/DateMethods.h
 	<iostream>
-	<sstream>
 	<iostream>
 	<time.h>
 	<ctime>
@@ -148,7 +148,7 @@
 	<algorithm>
 	"AuxiliaryMethods.h"
 
-1708791125 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithEarning.h
+1713887418 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/FileWithEarning.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -159,7 +159,8 @@
 	"XMLFile.h"
 	"DateMethods.h"
 	"Type.h"
+	"XMLFile.h"
 
-1708790038 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/Type.h
+1712863963 /home/kas/proje/lekcje/C++_obiektowy/a-personal-budget/personalBudget/Type.h
 	<iostream>
 

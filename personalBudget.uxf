@@ -64,7 +64,7 @@
       <x>1032</x>
       <y>640</y>
       <w>344</w>
-      <h>224</h>
+      <h>264</h>
     </coordinates>
     <panel_attributes>BudgetManager
 --
@@ -75,12 +75,15 @@
 -fileWithExpenses: FileWithEarning
 --
 -selectOptionFromBudgetMenu(): Char
--displayBalanceSheet(): void
+-displayEarning(): void
 -displaySumAndDifference(): void
 +getNewBudget(): vector &lt;Earning&gt;
 +BudgetManager()
 +addIncome(): void
 +addExpense(): void
++displayCurrentMonth'sBalanceSheet(): void
++displayPreviousMonth'sBalanceSheet(): void
++displayBalanceSheetFromSelectedTimePeriod(): void
 +getSelectedTimePeriod() : String
 +sortData(): Integer</panel_attributes>
     <additional_attributes/>
@@ -395,7 +398,7 @@ _+saveDataWithHypen(): string_</panel_attributes>
     <panel_attributes>DataMethods
 --
 --
-_+takeTimeFromSystem(): String_
+_+getTimeFromSystem(): String_
 _+sortData(): Integer_
 _+checkFormatDateIsCorrect(): void_
 _+checkNumberOfDaysPerMonth(): void_</panel_attributes>
@@ -457,8 +460,7 @@ _+checkNumberOfDaysPerMonth(): void_</panel_attributes>
 --
 --
 +sumOfEarning (): Double
-+setPrecision (): Double
-+showBudget (): void</panel_attributes>
++setPrecision (): Double</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

@@ -36,8 +36,6 @@
 		<Unit filename="AuxiliaryMethods.h" />
 		<Unit filename="BudgetManager.cpp" />
 		<Unit filename="BudgetManager.h" />
-		<Unit filename="CalculationMethods.cpp" />
-		<Unit filename="CalculationMethods.h" />
 		<Unit filename="DateMethods.cpp" />
 		<Unit filename="DateMethods.h" />
 		<Unit filename="Earning.cpp" />

@@ -5,8 +5,7 @@
 
 using namespace std;
 
-enum Type
-{
+enum Type {
     INCOME,
     EXPENSE
 

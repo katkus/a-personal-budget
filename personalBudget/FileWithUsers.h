@@ -10,22 +10,15 @@
 #include "User.h"
 #include "AuxiliaryMethods.h"
 #include "XMLFile.h"
-//#include "Markup.h"
 
 using namespace std;
 
-class FileWithUsers : public XMLFile
-{
-    //CMarkup xml;
-    //string zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(Uzytkownik uzytkownik);
-   User getUserData (string oneUserData);
-
+class FileWithUsers : public XMLFile {
 
 public:
     FileWithUsers(string fileNameWithUsers) : XMLFile(fileNameWithUsers) {};
     void addUserToFile (User &user);
     vector <User> loadUsersFromFile();
-    void saveChangedPassword (User &user);//, string newPassword, int loggedInUserId);//void saveChangedPassword (vector <User> &users, string newPassword, int loggedInUserId);
-    int setLastId(int userId);
+    void saveChangedPassword (User &user);
 };
 #endif // FILEWITHUSERS_H

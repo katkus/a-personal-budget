@@ -5,15 +5,15 @@
 
 using namespace std;
 
-class Earning
-{
-    int earningId, userId, date;
+class Earning {
+    int earningId, userId;
     string item;
-    string amount; //double
+    string amount;
 
 public:
-    Earning (int earningId = 0, int userId = 0, int date = 0, string item = "", string amount = "0.0")
-    {
+    int date;
+
+    Earning (int earningId = 0, int userId = 0, int date = 0, string item = "", string amount = "") {
         this->earningId = earningId;
         this->userId = userId;
         this->date = date;

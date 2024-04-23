@@ -1,70 +1,52 @@
 #include "PersonalBudget.h"
 
-void PersonalBudget::registerUser()
-{
+void PersonalBudget::registerUser() {
     userManager.registerUser();
 }
-void PersonalBudget::loginUser()
-{
+void PersonalBudget::loginUser() {
     userManager.loginUser();
-    if (userManager.isUserLoggedIn())
-    {
+    if (userManager.isUserLoggedIn()) {
         budgetManager= new BudgetManager (FILE_NAME_WITH_INCOMES, FILE_NAME_WITH_EXPENSES, userManager.getLoggedInUserId());
     }
 }
-void PersonalBudget::logoutUser()
-{
+void PersonalBudget::logoutUser() {
     userManager.logoutUser();
     delete budgetManager;
     budgetManager = NULL;
 }
-void PersonalBudget::changePassword()
-{
+void PersonalBudget::changePassword() {
     userManager.changePassword();
 }
-void PersonalBudget::addIncome()
-{
-    if(userManager.isUserLoggedIn())
-    {
-      budgetManager -> addIncome();
-    }
-    else
-    {
+void PersonalBudget::addIncome() {
+    if(userManager.isUserLoggedIn()) {
+        budgetManager -> addIncome();
+    } else {
         cout << "Aby dodac zarobek, nalezy najpierw sie zalogowac." << endl;
         system("read"); // Windows system("pause")
     }
 }
-void PersonalBudget::addExpense()
-{
-    if(userManager.isUserLoggedIn())
-    {
-      budgetManager -> addExpense();
-    }
-    else
-    {
+void PersonalBudget::addExpense() {
+    if(userManager.isUserLoggedIn()) {
+        budgetManager -> addExpense();
+    } else {
         cout << "Aby dodac zarobek, nalezy najpierw sie zalogowac." << endl;
         system("read"); // Windows system("pause")
     }
 }
-/*void PersonalBudget::displayCurrentMonthsBalanceSheet()
-{
+void PersonalBudget::displayCurrentMonthsBalanceSheet() {
     budgetManager -> displayCurrentMonthsBalanceSheet();
 }
-void PersonalBudget::displayPreviousMonthsBalanceSheet()
-{
+void PersonalBudget::displayPreviousMonthsBalanceSheet() {
     budgetManager -> displayPreviousMonthsBalanceSheet();
 }
-void PersonalBudget::displayBalanceSheetFromSelectedTimePeriod()
-{
+void PersonalBudget::displayBalanceSheetFromSelectedTimePeriod() {
     budgetManager -> displayBalanceSheetFromSelectedTimePeriod();
-}*/
+}
 
-bool PersonalBudget::isUserLoggedIn()
-{
+bool PersonalBudget::isUserLoggedIn() {
     return userManager.isUserLoggedIn();
 }
-char PersonalBudget::selectOptionFromMainMenu()
-{
+char PersonalBudget::selectOptionFromMainMenu() {
     char choice;
 
     system("clear");//Windows system("cls")
@@ -79,8 +61,7 @@ char PersonalBudget::selectOptionFromMainMenu()
 
     return choice;
 }
-char PersonalBudget::selectOptionFromBudgetMenu()
-{
+char PersonalBudget::selectOptionFromBudgetMenu() {
     char choice;
 
     system("clear");//Windows system("cls")
